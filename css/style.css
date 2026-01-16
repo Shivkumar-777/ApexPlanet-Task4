@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f8faf9;
+  color: #1f2937;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: white;
+}
+
+.navbar a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+.btn {
+  background: #10b981;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-outline {
+  border: 1px solid #10b981;
+  padding: 10px 18px;
+  border-radius: 8px;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 40px;
+}
+
+.hero span {
+  color: #10b981;
+}
+
+.hero-image img {
+  border-radius: 20px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+/* TODO */
+.todo {
+  padding: 40px;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+}
+
+#taskList li {
+  background: white;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* PRODUCTS */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/* CONTACT */
+.contact {
+  padding: 60px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.6;
+}

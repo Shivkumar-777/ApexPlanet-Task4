@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | Projects</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h2 class="logo">Portfolio</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- TO DO APP -->
+<section class="todo">
+  <h1>My Tasks</h1>
+  <p>Engineering Portfolio Tool</p>
+
+  <div class="todo-input">
+    <input type="text" id="taskInput" placeholder="What needs to be done?">
+    <button onclick="addTask()">Add</button>
+  </div>
+
+  <ul id="taskList"></ul>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+  <h1>Projects & Products</h1>
+
+  <select id="sortSelect" onchange="sortProducts()">
+    <option value="">Sort By</option>
+    <option value="price">Price</option>
+    <option value="rating">Rating</option>
+  </select>
+
+  <div id="productGrid" class="product-grid"></div>
+</section>
+
+<script src="js/main.js"></script>
+<script src="js/todo.js"></script>
+<script src="js/products.js"></script>
+</body>
+</html>
