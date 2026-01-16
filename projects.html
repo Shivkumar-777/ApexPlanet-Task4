@@ -1,49 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio | Projects</title>
+  <title>Projects</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="navbar">
-  <h2 class="logo">Portfolio</h2>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <div class="container nav-inner">
+    <h2 class="logo">Portfolio</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="todo.html">To-Do</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<!-- TO DO APP -->
-<section class="todo">
-  <h1>My Tasks</h1>
-  <p>Engineering Portfolio Tool</p>
+<section class="container section slide-up">
+  <h1>My Projects</h1>
 
-  <div class="todo-input">
-    <input type="text" id="taskInput" placeholder="What needs to be done?">
-    <button onclick="addTask()">Add</button>
+  <div class="card-grid">
+    <div class="card">
+      <img src="https://picsum.photos/300/200">
+      <p>To-Do App using localStorage</p>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/301/200">
+      <p>Responsive Portfolio Website</p>
+    </div>
+
+    <div class="card">
+      <img src="https://picsum.photos/302/200">
+      <p>JavaScript Dashboard</p>
+    </div>
   </div>
-
-  <ul id="taskList"></ul>
 </section>
 
-<!-- PRODUCTS -->
-<section class="products">
-  <h1>Projects & Products</h1>
-
-  <select id="sortSelect" onchange="sortProducts()">
-    <option value="">Sort By</option>
-    <option value="price">Price</option>
-    <option value="rating">Rating</option>
-  </select>
-
-  <div id="productGrid" class="product-grid"></div>
-</section>
-
-<script src="js/main.js"></script>
-<script src="js/todo.js"></script>
-<script src="js/products.js"></script>
+<footer>© 2024 Projects</footer>
 </body>
 </html>

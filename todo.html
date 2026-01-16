@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <h2 class="logo">Portfolio</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="todo.html">To-Do</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container section fade-in">
+  <h1>To-Do App</h1>
+
+  <div class="todo-card">
+    <input id="taskInput" placeholder="Enter task">
+    <button class="btn" onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </div>
+</section>
+
+<script src="js/todo.js"></script>
+</body>
+</html>

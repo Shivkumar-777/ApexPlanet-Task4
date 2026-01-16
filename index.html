@@ -1,55 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Portfolio | Home</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="navbar">
-  <h2 class="logo">Portfolio</h2>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
-    <button class="btn">Hire Me</button>
-  </nav>
+  <div class="container nav-inner">
+    <h2 class="logo">Portfolio</h2>
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="todo.html">To-Do</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
 </header>
 
-<section class="hero">
-  <div class="hero-text">
-    <span class="badge">Available for Internship</span>
-    <h1>Engineering student & <span>Frontend Developer</span></h1>
-    <p>
-      I design and build clean, responsive, and user-friendly web applications
-      using modern frontend technologies.
-    </p>
-    <div class="hero-actions">
+<section class="hero fade-in">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">Available for Internship</span>
+      <h1>Engineering Student & <span>Frontend Developer</span></h1>
+      <p>
+        Passionate about building clean, interactive and responsive web
+        applications using HTML, CSS & JavaScript.
+      </p>
       <a href="projects.html" class="btn">View Projects</a>
-      <a class="btn-outline">Download CV</a>
     </div>
-  </div>
-
-  <div class="hero-image">
-    <img src="https://picsum.photos/420/480" alt="Profile">
+    <img src="https://picsum.photos/450/450" class="hero-img">
   </div>
 </section>
 
-<section class="stats">
-  <div>
-    <h3>3+</h3>
-    <p>Years Coding</p>
-  </div>
-  <div>
-    <h3>15+</h3>
-    <p>Projects Completed</p>
+<section class="container info slide-up">
+  <h2>What I Do</h2>
+  <div class="card-grid">
+    <div class="card">Frontend Development</div>
+    <div class="card">UI / UX Design</div>
+    <div class="card">JavaScript Projects</div>
   </div>
 </section>
 
-<footer>
-  © 2024 Engineering Student Portfolio
-</footer>
+<footer>© 2024 Internship Portfolio</footer>
 
 <script src="js/main.js"></script>
 </body>
