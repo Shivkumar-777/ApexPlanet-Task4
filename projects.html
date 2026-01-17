@@ -1,44 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Projects</title>
+  <title>Projects | DevPortfolio</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- NAVBAR -->
 <header class="navbar">
-  <div class="container nav-inner">
-    <h2 class="logo">Portfolio</h2>
+  <div class="nav">
+    <h3>DevPortfolio</h3>
     <nav>
       <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="products.html">Products</a>
       <a href="todo.html">To-Do</a>
-      <a class="active" href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="container section slide-up">
-  <h1>My Projects</h1>
-
-  <div class="card-grid">
-    <div class="card">
-      <img src="https://picsum.photos/300/200">
-      <p>To-Do App using localStorage</p>
-    </div>
-
-    <div class="card">
-      <img src="https://picsum.photos/301/200">
-      <p>Responsive Portfolio Website</p>
-    </div>
-
-    <div class="card">
-      <img src="https://picsum.photos/302/200">
-      <p>JavaScript Dashboard</p>
-    </div>
-  </div>
+<!-- PROJECTS HEADER -->
+<section class="container fade">
+  <h1 style="font-size:48px">Featured <span style="color:#3cff00">Projects</span></h1>
+  <p style="color:var(--muted);max-width:600px">
+    A selection of my recent work focusing on performance, UI/UX, and interactive web applications.
+  </p>
 </section>
 
-<footer>© 2024 Projects</footer>
+<!-- PROJECT GRID -->
+<section class="container grid grid-3 fade">
+
+  <!-- PROJECT CARD -->
+  <div class="card project-card">
+    <img src="assets/project1.png" class="project-img">
+    <h3>Nexus Dashboard</h3>
+    <p class="muted">
+      Real-time analytics dashboard with interactive charts and authentication.
+    </p>
+    <div class="tags">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    </div>
+    <button class="btn btn-primary">Live Demo</button>
+  </div>
+
+  <div class="card project-card">
+    <img src="assets/project2.png" class="project-img">
+    <h3>EcoGrid Control</h3>
+    <p class="muted">
+      Energy monitoring system with data visualization and filtering.
+    </p>
+    <div class="tags">
+      <span>JS</span><span>Charts</span><span>API</span>
+    </div>
+    <button class="btn btn-primary">Live Demo</button>
+  </div>
+
+  <div class="card project-card">
+    <img src="assets/project3.png" class="project-img">
+    <h3>Task Manager App</h3>
+    <p class="muted">
+      LocalStorage-based to-do app with smooth UI and animations.
+    </p>
+    <div class="tags">
+      <span>HTML</span><span>CSS</span><span>LocalStorage</span>
+    </div>
+    <button class="btn btn-primary">Live Demo</button>
+  </div>
+
+</section>
+
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,49 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Portfolio | Home</title>
+  <meta charset="UTF-8">
+  <title>Home | DevPortfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- ================= NAVBAR ================= -->
 <header class="navbar">
-  <div class="container nav-inner">
-    <h2 class="logo">Portfolio</h2>
+  <div class="nav">
+    <h3 class="logo">DevPortfolio</h3>
     <nav>
-      <a class="active" href="index.html">Home</a>
-      <a href="todo.html">To-Do</a>
+      <a href="index.html" class="active">Home</a>
       <a href="projects.html">Projects</a>
+      <a href="products.html">Products</a>
+      <a href="todo.html">To-Do</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="hero fade-in">
-  <div class="container hero-grid">
-    <div>
-      <span class="badge">Available for Internship</span>
-      <h1>Engineering Student & <span>Frontend Developer</span></h1>
-      <p>
-        Passionate about building clean, interactive and responsive web
-        applications using HTML, CSS & JavaScript.
-      </p>
-      <a href="projects.html" class="btn">View Projects</a>
+<!-- ================= HERO SECTION ================= -->
+<section class="container hero fade">
+  <div>
+
+    <span class="badge">Available for Internship</span>
+
+    <h1>
+      Engineering Student <br>
+      & <span>Frontend Developer</span>
+    </h1>
+
+    <p>
+      Building high-performance, visually rich web applications.
+    </p>
+
+    <div style="margin-top:26px;display:flex;gap:16px;flex-wrap:wrap">
+      <a href="projects.html" class="btn btn-primary">
+        View Projects
+      </a>
+
+      <a href="contact.html" class="btn btn-outline">
+        Contact Me
+      </a>
     </div>
-    <img src="https://picsum.photos/450/450" class="hero-img">
+
+  </div>
+
+  <div class="card">
+    <img src="assets/profile.png" alt="Profile" style="width:100%;border-radius:14px">
   </div>
 </section>
 
-<section class="container info slide-up">
-  <h2>What I Do</h2>
-  <div class="card-grid">
-    <div class="card">Frontend Development</div>
-    <div class="card">UI / UX Design</div>
-    <div class="card">JavaScript Projects</div>
+<!-- ================= SKILLS / SERVICES ================= -->
+<section class="container grid grid-3 fade">
+  <div class="card">
+    <h3>Frontend Development</h3>
+    <p class="muted">
+      Modern, responsive UI using HTML, CSS, JavaScript & frameworks.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>UI / UX Design</h3>
+    <p class="muted">
+      Clean layouts, smooth interactions, and user-focused design.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>JavaScript Applications</h3>
+    <p class="muted">
+      Dynamic apps with localStorage, APIs, and real-time logic.
+    </p>
   </div>
 </section>
 
-<footer>© 2024 Internship Portfolio</footer>
-
+<!-- ================= SCRIPTS ================= -->
 <script src="js/main.js"></script>
+
 </body>
 </html>

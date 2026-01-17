@@ -1,33 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>To-Do App</title>
+  <meta charset="UTF-8">
+  <title>To-Do | DevPortfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- NAVBAR -->
 <header class="navbar">
-  <div class="container nav-inner">
-    <h2 class="logo">Portfolio</h2>
+  <div class="nav">
+    <h3 class="logo">DevPortfolio</h3>
     <nav>
       <a href="index.html">Home</a>
-      <a class="active" href="todo.html">To-Do</a>
       <a href="projects.html">Projects</a>
+      <a href="products.html">Products</a>
+      <a href="todo.html">To-Do</a>
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="container section fade-in">
-  <h1>To-Do App</h1>
+<!-- TODO SECTION -->
+<section class="container fade">
+  <span class="badge">Productivity</span>
+  <h1 style="font-size:46px;margin-top:12px">
+    Task <span style="color:#3cff00">Manager</span>
+  </h1>
+  <p class="muted">Organize your tasks and track your progress.</p>
 
-  <div class="todo-card">
-    <input id="taskInput" placeholder="Enter task">
-    <button class="btn" onclick="addTask()">Add</button>
-    <ul id="taskList"></ul>
+  <!-- TODO CARD -->
+  <div class="todo-premium">
+
+    <!-- INPUT -->
+    <div class="todo-input-box">
+      <input
+        id="taskInput"
+        type="text"
+        placeholder="What do you want to accomplish today?"
+      />
+      <button class="btn btn-primary" onclick="addTask()">Add</button>
+    </div>
+
+    <!-- PROGRESS -->
+    <div class="progress-wrapper">
+      <div class="progress-info">
+        <span id="progressText">0% completed</span>
+        <span id="taskCount">0 / 0</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+
+    <!-- TASK LIST -->
+    <ul class="todo-list" id="list"></ul>
+
   </div>
 </section>
 
 <script src="js/todo.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

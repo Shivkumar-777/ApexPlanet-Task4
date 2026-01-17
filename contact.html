@@ -1,36 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Contact</title>
+  <meta charset="UTF-8">
+  <title>Contact | DevPortfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- ================= NAVBAR ================= -->
 <header class="navbar">
-  <div class="container nav-inner">
-    <h2 class="logo">Portfolio</h2>
+  <div class="nav">
+    <h3 class="logo">DevPortfolio</h3>
     <nav>
       <a href="index.html">Home</a>
-      <a href="todo.html">To-Do</a>
       <a href="projects.html">Projects</a>
-      <a class="active" href="contact.html">Contact</a>
+      <a href="products.html">Products</a>
+      <a href="todo.html">To-Do</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </div>
 </header>
 
-<section class="container section fade-in">
-  <div class="contact-card">
-    <h1>Contact Me</h1>
+<!-- ================= CONTACT SECTION ================= -->
+<section class="container fade">
 
-    <input id="name" placeholder="Name">
-    <input id="email" placeholder="Email">
-    <textarea id="message" placeholder="Message"></textarea>
-    <button class="btn" onclick="sendMessage()">Send</button>
+  <!-- HEADER -->
+  <div style="max-width:600px;margin-bottom:60px">
+    <h1 style="font-size:52px;margin-bottom:14px">
+      Let's <span style="color:#3cff00">Connect</span>
+    </h1>
+    <p class="muted">
+      I'm currently looking for new opportunities in frontend engineering.
+      Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    </p>
+  </div>
 
-    <p id="successMsg"></p>
+  <!-- ================= LAYOUT ================= -->
+  <div class="contact-layout">
+
+    <!-- LEFT INFO -->
+    <div class="contact-info">
+
+      <div class="info-card">
+        <div class="icon">✉</div>
+        <div>
+          <small>EMAIL</small>
+          <p>hello@engineer.dev</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="icon">in</div>
+        <div>
+          <small>LINKEDIN</small>
+          <p>linkedin.com/in/dev-engineer</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="icon">⌘</div>
+        <div>
+          <small>GITHUB</small>
+          <p>github.com/dev-engineer</p>
+        </div>
+      </div>
+
+      <p class="availability">
+        Available for freelance and full-time roles.
+      </p>
+
+    </div>
+
+    <!-- RIGHT FORM -->
+    <div class="contact-premium">
+
+      <form id="contactForm" novalidate>
+
+        <div class="field">
+          <input type="text" id="name" placeholder=" " required>
+          <label>Full Name</label>
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <input type="email" id="email" placeholder=" " required>
+          <label>Email Address</label>
+          <small class="error"></small>
+        </div>
+
+        <div class="field">
+          <textarea id="message" rows="4" placeholder=" " required></textarea>
+          <label>Your Message</label>
+          <small class="error"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Send Message →
+        </button>
+
+      </form>
+
+    </div>
+
   </div>
 </section>
 
+<!-- ================= SUCCESS POPUP ================= -->
+<div class="success-overlay" id="successOverlay">
+  <div class="success-popup">
+    <div class="checkmark">✓</div>
+    <h3>Message Sent!</h3>
+    <p>Thank you for reaching out. I’ll get back to you soon.</p>
+    <button class="btn btn-primary" onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+<!-- ================= SCRIPTS ================= -->
 <script src="js/contact.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products | DevPortfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="nav">
+    <h3 class="logo">DevPortfolio</h3>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="todo.html">To-Do</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="container fade">
+  <span class="badge">Marketplace</span>
+  <h1 style="font-size:48px;margin-top:12px">
+    Product <span style="color:#3cff00">Listing</span>
+  </h1>
+  <p class="muted" style="max-width:600px">
+    Filter, search, and sort premium digital & physical products dynamically.
+  </p>
+</section>
+
+<!-- ================= FILTER BAR ================= -->
+<section class="container fade">
+  <div class="filter-bar">
+
+    <!-- SEARCH -->
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search products..."
+      style="
+        background: rgba(255,255,255,0.06);
+        color: white;
+        border: none;
+        padding: 10px 14px;
+        border-radius: 10px;
+        outline: none;
+        min-width: 220px;
+      "
+    >
+
+    <!-- FILTERS -->
+    <div class="filters">
+      <select id="categoryFilter">
+        <option value="All">All Categories</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Software">Software</option>
+        <option value="Design">Design</option>
+      </select>
+
+      <select id="priceSort">
+        <option value="">Price</option>
+        <option value="low">Low → High</option>
+        <option value="high">High → Low</option>
+      </select>
+
+      <select id="ratingSort">
+        <option value="">Sort</option>
+        <option value="rating">Top Rated</option>
+      </select>
+    </div>
+
+    <span class="result-count" id="resultCount"></span>
+  </div>
+</section>
+
+<!-- ================= PRODUCTS GRID ================= -->
+<section class="container grid grid-3 fade" id="productGrid">
+  <!-- Rendered via JS -->
+</section>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="js/product.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
